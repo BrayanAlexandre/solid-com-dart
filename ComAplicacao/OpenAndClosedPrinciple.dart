@@ -36,7 +36,6 @@ void main() {
 
       default:
         print("Opção inválida!");
-        pagamento.pagar();
         return;
     }
 
