@@ -40,7 +40,7 @@ void main() {
     int valorDepositoNumerico = int.parse(valorDeposito);
 
     if (valorDepositoNumerico <= 0) {
-     print('Digite um valor maior que zero!');
+     print('O valor do depósito deve ser maior que zero!');
      continue;
     }
 
@@ -67,7 +67,7 @@ void main() {
     int valorSaqueNumerico = int.parse(valorSaque);
 
     if (valorSaqueNumerico <= 0) {
-     print('Digite um valor maior que zero!');
+     print('O valor do saque deve ser maior que zero!');
      continue;
     }
 
