@@ -37,7 +37,7 @@ void main() {
         int valorDepositoNumerico = int.parse(valorDeposito);
 
         if (valorDepositoNumerico <= 0) {
-          print('O valor do depósito deve ser positivo!');
+          print('O valor do depósito deve ser maior que zero!');
           continue;
         }
 
@@ -63,7 +63,7 @@ void main() {
         int valorSaqueNumerico = int.parse(valorSaque);
 
         if (valorSaqueNumerico <= 0) {
-          print('O valor do saque deve ser positivo!');
+          print('O valor do saque deve ser maior que zero!');
           continue;
         }
 
