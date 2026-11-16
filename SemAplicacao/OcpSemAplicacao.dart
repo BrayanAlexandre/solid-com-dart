@@ -1,6 +1,8 @@
 import 'dart:io';
 
 void main() {
+  Pagamento pagamento = Pagamento();
+
   print("Escolha a forma de pagamento:");
   print("1 - Dinheiro");
   print("2 - Pix");
@@ -18,15 +20,15 @@ void main() {
 
     switch (escolha) {
       case 1:
-        print("Pagamento em dinheiro");
+        pagamento.dinheiro();
         break;
 
       case 2:
-        print("Pagamento via Pix");
+        pagamento.pix();
         break;
 
       case 3:
-        print("Pagamento com cartão");
+        pagamento.cartao();
         break;
 
       default:
@@ -34,7 +36,21 @@ void main() {
         return;
     }
   } catch (e) {
-    print("Erro: $e");
+    print("Digite apenas números: $e");
     return;
+  }
+}
+
+class Pagamento {
+  void dinheiro() {
+    print("Pagamento em dinheiro");
+  }
+
+  void pix() {
+    print("Pagamento via Pix");
+  }
+
+  void cartao() {
+    print("Pagamento com cartão");
   }
 }
